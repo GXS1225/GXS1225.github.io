@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+</head>
+
+
+
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  
+      <title>Search - 诗与远方</title>
+  
+
+  
+  
+  <meta name="description" content="当你的才华还撑不起你的野心的时候，你就应该静下心来学习；当你的能力还驾驭不了你的目标时，就应该沉下心来.">
+  <meta name="author" content="耶二鱼">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- load loadjs.js -->
+  <script src="/libs/loadjs/dist/loadjs.min.js"></script>
+
+  <!-- load lightgallery -->
+<link rel="stylesheet" href="/css/lightgallery.css">
+<link rel="stylesheet" href="/libs/noty/lib/noty.css">
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="/css/taurus.css">
+    
+        <link rel="stylesheet" href="/css/scheme-taurus/animations.css">
+    
+
+
+ 
+
+  <!-- load font awesome 5 -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+  <!-- load mathjax -->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax//libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <!-- load js-cookie -->
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/js/social-share.min.js"></script>
+    <script src="/js/theme.js"></script>
+
+  <!-- include cookie.js -->
+  
+  
+
+  <!-- include comment system code -->
+  
+    <script src="//cdn1.lncld.net/static/js/3.6.4/av-min.js"></script>
+<script src=''></script>
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+
+ 
+
+<header id="header" class='header'>
+	<div class="header-title">
+		
+		<div class='header-logo'>
+			<a href='/'>
+				<img src='/images/logo.jpg' />
+			</a>
+		</div>
+		<div class='header-text'>
+			<h1>
+				<a href="/">诗与远方</a>
+			</h1>
+			<subtitle>
+				为了梦想而努力
+			</subtitle>
+		</div>
+		
+	</div>
+	<div id='header-nav'>
+		
+
+
+
+<nav id="nav">
+	
+	
+		
+			
+		
+		
+			<div class='nav-item'>
+				
+					<div class="nav-name">
+				
+					<a class='nav-link' href="/apple/">
+						<span>介绍 </span>
+					</a>
+				</div>
+			</div>
+		
+	
+		
+			
+		
+		
+			<div class='nav-item'>
+				
+					<div class="nav-name">
+				
+					<a class='nav-link' href="/banana/">
+						<span>关于 </span>
+					</a>
+				</div>
+			</div>
+		
+	
+		
+			
+		
+		
+			<div class='nav-item'>
+				
+					<div class="nav-name">
+				
+					<a class='nav-link' href="/categories/Blogs">
+						<span>博客 </span>
+					</a>
+				</div>
+			</div>
+		
+	
+		
+			
+		
+		
+			<div class='nav-item'>
+				
+					<div class="nav-name">
+				
+					<a class='nav-link' href="/categories/Notes">
+						<span>小记 </span>
+					</a>
+				</div>
+			</div>
+		
+	
+	
+	<div class='nav-item' id='nav-item-archive'>
+		
+				<div class='nav-icon'>
+				
+			<a href="/archives/" title='Archives'>
+			<img src="/images/icons/blue-shadow/archive.svg" alt="">
+			</a>
+		</div>
+	</div>
+	<div class='nav-item' id='nav-item-search'>
+		
+		<div class='nav-icon active_dot'>
+		
+			<a href="/search/" title='Search'>
+			<img src="/images/icons/blue-shadow/search.svg" alt="">
+			</a>
+		</div>
+	</div>
+	<div class="nav-item" id='nav-item-more'>
+		<div class="nav-icon">
+				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
+				<img src="/images/icons/blue-shadow/menu.svg" alt="">
+				</a>
+		</div>
+		<div class="nav-more-menu">
+		
+			
+			
+				
+			
+				
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="/apple/">
+							<span>介绍</span>
+						</a>
+					</div>
+			</div>
+		
+		
+			
+			
+				
+			
+				
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="/banana/">
+							<span>关于</span>
+						</a>
+					</div>
+			</div>
+		
+		
+			
+			
+				
+			
+				
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="/categories/Blogs">
+							<span>博客</span>
+						</a>
+					</div>
+			</div>
+		
+		
+			
+			
+				
+			
+				
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="/categories/Notes">
+							<span>小记</span>
+						</a>
+					</div>
+			</div>
+		
+		
+		
+		<div class='nav-more-item'>
+				<div class="nav-name">
+					<a class='nav-link' href="/categories/Blogs/">
+						<span>Blogs</span>
+					</a>
+				</div>
+		</div>
+		
+		<div class='nav-more-item'>
+				<div class="nav-name">
+					<a class='nav-link' href="/categories/Notes/">
+						<span>Notes</span>
+					</a>
+				</div>
+		</div>
+		
+	</div>
+	</div>
+</nav>
+
+	</div>
+</header>
+
+ 
+
+
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div style="flex: 1;">
+      <div class='search-container'>
+	<input type="text" id='search-form'>
+
+	<ul class="cat-list">
+		
+			<li><a href="/categories/Blogs/"><img src="/images/Blogs.svg" alt="Blogs" onerror='if(this.src != "/images/uncategorized.svg") this.src="/images/uncategorized.svg"' title='Blogs'></a></li>
+		
+			<li><a href="/categories/Notes/"><img src="/images/Notes.svg" alt="Notes" onerror='if(this.src != "/images/uncategorized.svg") this.src="/images/uncategorized.svg"' title='Notes'></a></li>
+		
+	</ul>
+
+	<div class="archive-cards">
+			<div class='Card-archive' style='display:none'>
+				<div class="Card-body">
+					<h3 class='Card-title'>
+						<a>
+						</a>
+					</h3>
+					<div class="Card-meta">
+						<ul>
+							<li><i class='fa fa-calendar'></i> <span class='Card-date'></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+
+<script src="/libs/fuse.js/dist/fuse.min.js"></script>
+<script>
+	var options = {
+		shouldSort: true,
+		threshold: 0.4,
+		tokenize: true,
+		location: 0,
+		distance: 100,
+		maxPatternLength: 32,
+		minMatchCharLength: 2,
+		keys: [
+			"title",
+			"author",
+			"tags"
+		]
+	};
+	var s = '[{"title":"Demo","date":"2018-04-19T13:12:02.000Z","content":"","tags":[],"path":"2018/04/19/Demo-1/","external_link":""},{"title":"小左","date":"2018-04-17T13:33:12.000Z","content":"静夜诗疑是地上霜举头望明月低头思故乡","tags":["动漫","游戏","爱好"],"path":"2018/04/17/Demo/","external_link":""},{"title":"耶二鱼","date":"2018-03-10T13:33:12.000Z","content":"天净沙·秋思作者: 马致远 朝代: 元枯藤老树昏鸦,小桥流水人家,古道西风瘦马。夕阳西下,断肠人在天涯。","tags":["技术","GitHub"],"path":"2018/03/10/hello-world/","external_link":""},{"title":"小李","date":"2018-04-17T13:33:12.000Z","content":"天净沙·秋思作者: 马致远 朝代: 元枯藤老树昏鸦,小桥流水人家,古道西风瘦马。夕阳西下,断肠人在天涯。","tags":["动漫","游戏","爱好"],"path":"2018/04/17/index2/","external_link":""},{"title":"摩丁伯格","date":"2018-04-17T13:33:12.000Z","content":"天净沙·秋思作者: 马致远 朝代: 元枯藤老树昏鸦,小桥流水人家,古道西风瘦马。夕阳西下,断肠人在天涯。","tags":["学习","英语","编程"],"path":"2018/04/17/index1/","external_link":""},{"title":"小怪兽","date":"2018-04-17T13:33:12.000Z","content":"天净沙·秋思作者: 马致远 朝代: 元枯藤老树昏鸦,小桥流水人家,古道西风瘦马。夕阳西下,断肠人在天涯。","tags":["多媒体","AI","人工智能"],"path":"2018/04/17/index3/","external_link":""},{"title":"我爱罗","date":"2018-04-17T13:33:12.000Z","content":"天净沙·秋思作者: 马致远 朝代: 元枯藤老树昏鸦,小桥流水人家,古道西风瘦马。夕阳西下,断肠人在天涯。","tags":["动漫","游戏","爱好"],"path":"2018/04/17/index4/","external_link":""},{"title":"鸣人","date":"2018-04-17T13:33:12.000Z","content":"天净沙·秋思作者: 马致远 朝代: 元枯藤老树昏鸦,小桥流水人家,古道西风瘦马。夕阳西下,断肠人在天涯。","tags":["动漫","游戏","爱好"],"path":"2018/04/17/test1/","external_link":""},{"title":"佐助","date":"2018-02-17T13:33:12.000Z","content":"天净沙·秋思作者: 马致远 朝代: 元枯藤老树昏鸦,小桥流水人家,古道西风瘦马。夕阳西下,断肠人在天涯。","tags":["技术","GitHub"],"path":"2018/02/17/test2/","external_link":""},{"title":"香子","date":"2018-01-17T13:33:12.000Z","content":"天净沙·秋思作者: 马致远 朝代: 元枯藤老树昏鸦,小桥流水人家,古道西风瘦马。夕阳西下,断肠人在天涯。","tags":["火影","海贼王","柯南"],"path":"2018/01/17/test3/","external_link":""},{"title":"完美世界","date":"2018-04-08T13:33:12.000Z","content":"天净沙·秋思作者: 马致远 朝代: 元枯藤老树昏鸦,小桥流水人家,古道西风瘦马。夕阳西下,断肠人在天涯。","tags":["游戏"],"path":"2018/04/08/test4/","external_link":""},{"title":"花木兰","date":"2018-03-17T13:33:12.000Z","content":"天净沙·秋思作者: 马致远 朝代: 元枯藤老树昏鸦,小桥流水人家,古道西风瘦马。夕阳西下,断肠人在天涯。","tags":["物联网","大数据"],"path":"2018/03/17/test6/","external_link":""},{"title":"李白","date":"2018-04-17T13:33:12.000Z","content":"天净沙·秋思作者: 马致远 朝代: 元枯藤老树昏鸦,小桥流水人家,古道西风瘦马。夕阳西下,断肠人在天涯。","tags":["技术","GitHub"],"path":"2018/04/17/test5/","external_link":""},{"title":"貂蝉","date":"2018-03-18T13:33:12.000Z","content":"天净沙·秋思作者: 马致远 朝代: 元枯藤老树昏鸦,小桥流水人家,古道西风瘦马。夕阳西下,断肠人在天涯。","tags":["技术","GitHub"],"path":"2018/03/18/test7/","external_link":""}]';
+	s = s.replace(/\\n/g, "\\n")
+               .replace(/\\'/g, "\\'")
+               .replace(/\\"/g, '\\"')
+               .replace(/\\&/g, "\\&")
+               .replace(/\\r/g, "\\r")
+               .replace(/\\t/g, "\\t")
+               .replace(/\\b/g, "\\b")
+               .replace(/\\f/g, "\\f")
+// remove non-printable and other non-valid JSON chars
+	s = s.replace(/[\u0000-\u0019]+/g,"");
+	var list = JSON.parse(s);
+	var fuse = new Fuse(list, options);
+	var el = document.getElementById('search-form');
+	var newBox = $('.Card-archive').first().clone();
+	el.oninput = function(event){
+		var searchText = el.value;
+		var result = fuse.search(searchText);
+		$('.archive-cards .Card-archive').remove();
+		for(var i in result){
+			var anotherBox = newBox.clone();
+			var dateStr = new Date(result[i].date);
+			anotherBox.css('display','flex');
+			var url = "";
+			if(result[i].external_link !== ""){
+				url = result[i].external_link;
+			}else{
+				url = '/' + result[i].path;
+			}
+
+			anotherBox.find('.Card-title a').text(result[i].title).attr('href', url);
+			anotherBox.find('.Card-date').text(dateStr.toDateString());
+			anotherBox.appendTo('.archive-cards');
+		}
+	}
+</script>
+
+<div class='tagcloud-container'>
+<div class='tag-cloud'>
+	<a href="/tags/AI/" style="font-size: 0.8em; color: #488baf">AI</a> <a href="/tags/GitHub/" style="font-size: 1.4em; color: #8f655d">GitHub</a> <a href="/tags/人工智能/" style="font-size: 0.8em; color: #488baf">人工智能</a> <a href="/tags/动漫/" style="font-size: 1.4em; color: #8f655d">动漫</a> <a href="/tags/多媒体/" style="font-size: 0.8em; color: #488baf">多媒体</a> <a href="/tags/大数据/" style="font-size: 0.8em; color: #488baf">大数据</a> <a href="/tags/学习/" style="font-size: 0.8em; color: #488baf">学习</a> <a href="/tags/技术/" style="font-size: 1.4em; color: #8f655d">技术</a> <a href="/tags/柯南/" style="font-size: 0.8em; color: #488baf">柯南</a> <a href="/tags/海贼王/" style="font-size: 0.8em; color: #488baf">海贼王</a> <a href="/tags/游戏/" style="font-size: 2em; color: #d63e0a">游戏</a> <a href="/tags/火影/" style="font-size: 0.8em; color: #488baf">火影</a> <a href="/tags/爱好/" style="font-size: 1.4em; color: #8f655d">爱好</a> <a href="/tags/物联网/" style="font-size: 0.8em; color: #488baf">物联网</a> <a href="/tags/编程/" style="font-size: 0.8em; color: #488baf">编程</a> <a href="/tags/英语/" style="font-size: 0.8em; color: #488baf">英语</a>
+</div>
+</div>
+
+  </div>
+
+  
+
+<footer id='footer'>
+    <div class='footer-copyright'>
+        <div>
+            <p> Copyright by <a href="">耶二鱼 </a> @ 2018</p>
+            <p> <i class="fas fa-graduation-cap"></i> 	跌跌撞撞，仍对世界微笑；彷徨失措，依然勇敢前行</p>
+        </div>
+    </div>
+    
+    <div class='footer-social'>
+        
+            
+                
+                    <div class='footer-social-item'><a href='https://github.com/GXS1225' target='_blank' ><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></div>
+                
+            
+                
+                    <div class='footer-social-item'><a href='https://blog.csdn.net/gxseveryday/' target='_blank' ><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a></div>
+                
+            
+        
+    </div>
+</footer>
+
+  <br>
+
+  <div id="footer-nav" class='footer-nav'>
+		
+
+
+
+<nav id="nav">
+	
+	
+		
+			
+				
+			
+		
+		
+	
+		
+			
+		
+		
+	
+		
+			
+		
+		
+	
+		
+			
+		
+		
+	
+	
+	<div class='nav-item' id='nav-item-archive'>
+		
+				<div class='nav-icon'>
+				
+			<a href="/archives/" title='Archives'>
+			<img src="/images/icons/blue-shadow/archive.svg" alt="">
+			</a>
+		</div>
+	</div>
+	<div class='nav-item' id='nav-item-search'>
+		
+		<div class='nav-icon active_dot'>
+		
+			<a href="/search/" title='Search'>
+			<img src="/images/icons/blue-shadow/search.svg" alt="">
+			</a>
+		</div>
+	</div>
+	<div class="nav-item" id='nav-item-more'>
+		<div class="nav-icon">
+				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
+				<img src="/images/icons/blue-shadow/menu.svg" alt="">
+				</a>
+		</div>
+		<div class="nav-more-menu">
+		
+			
+			
+				
+			
+				
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="/apple/">
+							<span>介绍</span>
+						</a>
+					</div>
+			</div>
+		
+		
+			
+			
+				
+			
+				
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="/banana/">
+							<span>关于</span>
+						</a>
+					</div>
+			</div>
+		
+		
+			
+			
+				
+			
+				
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="/categories/Blogs">
+							<span>博客</span>
+						</a>
+					</div>
+			</div>
+		
+		
+			
+			
+				
+			
+				
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="/categories/Notes">
+							<span>小记</span>
+						</a>
+					</div>
+			</div>
+		
+		
+		
+		<div class='nav-more-item'>
+				<div class="nav-name">
+					<a class='nav-link' href="/categories/Blogs/">
+						<span>Blogs</span>
+					</a>
+				</div>
+		</div>
+		
+		<div class='nav-more-item'>
+				<div class="nav-name">
+					<a class='nav-link' href="/categories/Notes/">
+						<span>Notes</span>
+					</a>
+				</div>
+		</div>
+		
+	</div>
+	</div>
+</nav>
+
+	</div>
+
+  
+
+
+
+    
+    
+    
+    
+    <script>
+    new Valine({
+	    av: AV,
+        el: '#valine',
+        notify: false, 
+        verify: false,
+		avatar:'wavatar',
+        app_id: 'mXums8k3fTQNVe2HWrWTNsLU-gzGzoHsz',
+        app_key: 'g4peMx7L26dXRpIjrfdXKixh',
+        placeholder: '(●′ω`●) 来呀，快活呀....',
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://l2.io/ip.js?var=user_ip"></script>
+<script type='text/javascript'>
+  
+</script>
+
+
+<!-- <script src="/js/post.js"></script> -->
+
+<script src="/js/headroom.min.js"></script>
+
+<script data-no-instant type='text/javascript'>
+
+initHeadroom();
+
+changeLayoutOnTouchScreen();
+
+// 
+</script>
+
+<script type='text/javascript'>
+
+  
+</script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
